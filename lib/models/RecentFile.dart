@@ -1,50 +1,49 @@
 class RecentFile {
-  final String? icon, title, date, size;
+  final String? icon, title, loc, followers;
 
-  RecentFile({this.icon, this.title, this.date, this.size});
+  RecentFile({this.icon, this.title, this.loc, this.followers});
 }
-
 List demoRecentFiles = [
   RecentFile(
     icon: "assets/icons/xd_file.svg",
-    title: "XD File",
-    date: "01-03-2021",
-    size: "3.5mb",
+    title: "Shop 1",
+    loc: "India",
+    followers: "33m",
   ),
   RecentFile(
     icon: "assets/icons/Figma_file.svg",
-    title: "Figma File",
-    date: "27-02-2021",
-    size: "19.0mb",
+    title: "Shop 2",
+    loc: "China",
+    followers: "21m",
   ),
   RecentFile(
     icon: "assets/icons/doc_file.svg",
-    title: "Document",
-    date: "23-02-2021",
-    size: "32.5mb",
+    title: "Shop 3",
+    loc: "India",
+    followers: "13m",
   ),
   RecentFile(
     icon: "assets/icons/sound_file.svg",
-    title: "Sound File",
-    date: "21-02-2021",
-    size: "3.5mb",
+    title: "Shop 4",
+    loc: "Pakistan",
+    followers: "5.5m",
   ),
   RecentFile(
     icon: "assets/icons/media_file.svg",
-    title: "Media File",
-    date: "23-02-2021",
-    size: "2.5gb",
+    title: "Shop 5",
+    loc: "China",
+    followers: "1.3m",
   ),
   RecentFile(
     icon: "assets/icons/pdf_file.svg",
-    title: "Sales PDF",
-    date: "25-02-2021",
-    size: "3.5mb",
+    title: "Shop 6",
+    loc: "Japan",
+    followers: "5k",
   ),
   RecentFile(
     icon: "assets/icons/excle_file.svg",
-    title: "Excel File",
-    date: "25-02-2021",
-    size: "34.5mb",
+    title: "Shop 7",
+    loc: "India",
+    followers: "2k",
   ),
 ];
