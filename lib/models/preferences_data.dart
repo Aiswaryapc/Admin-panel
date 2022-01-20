@@ -6,44 +6,37 @@ class PreferencesFile {
 List demoPreferencesFiles = [
   PreferencesFile(
     icon: "assets/icons/xd_file.svg",
-    title: "Shop 1",
-    loc: "India",
-
+    title: "Clothes",
+    loc: "10k",
   ),
   PreferencesFile(
     icon: "assets/icons/Figma_file.svg",
-    title: "Shop 2",
-    loc: "China",
-
+    title: "Medicine",
+    loc: "1.1k",
   ),
   PreferencesFile(
     icon: "assets/icons/doc_file.svg",
-    title: "Shop 3",
-    loc: "India",
-
+    title: "Electronic Gadgets",
+    loc: "6k",
   ),
   PreferencesFile(
     icon: "assets/icons/sound_file.svg",
-    title: "Shop 4",
-    loc: "Pakistan",
-
+    title: "Furniture",
+    loc: "800",
   ),
   PreferencesFile(
     icon: "assets/icons/media_file.svg",
-    title: "Shop 5",
-    loc: "China",
-
+    title: "Utensils",
+    loc: "2k",
   ),
   PreferencesFile(
     icon: "assets/icons/pdf_file.svg",
-    title: "Shop 6",
-    loc: "Japan",
-
+    title: "Herbs",
+    loc: "652",
   ),
   PreferencesFile(
     icon: "assets/icons/excle_file.svg",
-    title: "Shop 7",
-    loc: "India",
-
+    title: "Food Items",
+    loc: "4k",
   ),
 ];
