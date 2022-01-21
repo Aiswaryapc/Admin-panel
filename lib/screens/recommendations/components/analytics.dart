@@ -19,12 +19,13 @@ class AnalyticsPage extends StatelessWidget {
       child: Stack(alignment: Alignment.topLeft, children: [
         SingleChildScrollView(
             child: Column(mainAxisSize: MainAxisSize.max, children: [
-          Container(
-            // margin: EdgeInsets.only(
-            //     left: 25.0, top: 90.0, right: 25.0, bottom: 12.5),
-            child: new GridView.count(
-              crossAxisCount: extraLargeScreenGrid
-                  ? 4
+
+                Container(
+             // margin: EdgeInsets.only(
+             //     left: 25.0, top: 90.0, right: 25.0, bottom: 12.5),
+                child: new GridView.count(
+                  crossAxisCount: extraLargeScreenGrid
+                  ? 3
                   : tabScreenGrid
                       ? 2
                       : 1,
@@ -292,11 +293,13 @@ class AnalyticsPage extends StatelessWidget {
                           ],
                         ),
                       ),
+
                     ),
                   ),
                 ),
               ],
             ),
+
           ),
         ])),
       ]),
