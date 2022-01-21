@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:provider/provider.dart';
 
+import '../Approvals/approvals_main.dart';
 import '../analytics/analytics_main.dart';
 import 'components/side_menu.dart';
 
@@ -42,6 +43,12 @@ class _MainScreenState extends State<MainScreen> {
                 // It takes 5/6 part of the screen
                 flex: 5,
                 child: AnalyticsMainScreen(),
+              ),
+            if(title==5)
+              Expanded(
+                // It takes 5/6 part of the screen
+                flex: 5,
+                child: ApprovalScreen(),
               ),
           ],
         ),
