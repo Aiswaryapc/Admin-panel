@@ -1,6 +1,11 @@
 import 'package:admin/controllers/MenuController.dart';
 import 'package:admin/responsive.dart';
 import 'package:admin/screens/dashboard/dashboard_screen.dart';
+import 'package:admin/screens/database/database_screen.dart';
+import 'package:admin/screens/notification/notification_screen.dart';
+import 'package:admin/screens/recommendations/recommendations_screen.dart';
+import 'package:admin/screens/reports/reports_screen.dart';
+import 'package:admin/screens/sales_market/sales_market_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:provider/provider.dart';
@@ -14,7 +19,7 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<MainScreen> {
-  int title=1;
+  int title = 1;
 
   @override
   Widget build(BuildContext context) {
@@ -32,16 +37,47 @@ class _MainScreenState extends State<MainScreen> {
                 // and it takes 1/6 part of the screen
                 child: sideMenu(),
               ),
-            if(title==1) Expanded(
-              // It takes 5/6 part of the screen
-              flex: 5,
-              child: DashboardScreen(),
-            ),
-            if(title==2)
+            if (title == 1)
+              Expanded(
+                // It takes 5/6 part of the screen
+                flex: 5,
+                child: DashboardScreen(),
+              ),
+            if (title == 2)
               Expanded(
                 // It takes 5/6 part of the screen
                 flex: 5,
                 child: AnalyticsMainScreen(),
+              ),
+            if (title == 3)
+              Expanded(
+                // It takes 5/6 part of the screen
+                flex: 5,
+                child: DatabaseMainScreen(),
+              ),
+            if (title == 4)
+              Expanded(
+                // It takes 5/6 part of the screen
+                flex: 5,
+                child: ReportMainScreen(),
+              ),
+            if (title == 7)
+              Expanded(
+                // It takes 5/6 part of the screen
+                flex: 5,
+                child: RecommendationScreen(),
+              ),
+            if (title == 8)
+              Expanded(
+                // It takes 5/6 part of the screen
+                flex: 5,
+                child: SalesMarketScreen(),
+              ),
+            if (title == 10)
+              Expanded(
+                // It takes 5/6 part of the screen
+                flex: 5,
+                child: NotificationScreen(),
               ),
           ],
         ),
@@ -49,8 +85,8 @@ class _MainScreenState extends State<MainScreen> {
     );
   }
 
-Widget sideMenu(){
-    return  Drawer(
+  Widget sideMenu() {
+    return Drawer(
       child: ListView(
         children: [
           DrawerHeader(
@@ -60,90 +96,112 @@ Widget sideMenu(){
             title: "Dashboard",
             svgSrc: "assets/icons/menu_dashbord.svg",
             press: () {
-              setState((){
-                title=1;
+              setState(() {
+                title = 1;
               });
             },
           ),
           DrawerListTile(
             title: "Analytics",
             svgSrc: "assets/icons/menu_tran.svg",
-            press: () {setState((){
-              title=2;
-            });},
+            press: () {
+              setState(() {
+                title = 2;
+              });
+            },
           ),
           DrawerListTile(
             title: "Database",
             svgSrc: "assets/icons/menu_task.svg",
-            press: () {setState((){
-              title=3;
-            });},
+            press: () {
+              setState(() {
+                title = 3;
+              });
+            },
           ),
           DrawerListTile(
             title: "Reports",
             svgSrc: "assets/icons/menu_doc.svg",
-            press: () {setState((){
-              title=4;
-            });},
+            press: () {
+              setState(() {
+                title = 4;
+              });
+            },
           ),
           DrawerListTile(
             title: "Approvals",
             svgSrc: "assets/icons/menu_store.svg",
-            press: () {setState((){
-              title=5;
-            });},
+            press: () {
+              setState(() {
+                title = 5;
+              });
+            },
           ),
           DrawerListTile(
             title: "Access Rights",
             svgSrc: "assets/icons/menu_store.svg",
-            press: () {setState((){
-              title=6;
-            });},
+            press: () {
+              setState(() {
+                title = 6;
+              });
+            },
           ),
           DrawerListTile(
             title: "Recommendations",
             svgSrc: "assets/icons/menu_store.svg",
-            press: () {setState((){
-              title=7;
-            });},
+            press: () {
+              setState(() {
+                title = 7;
+              });
+            },
           ),
           DrawerListTile(
             title: "Sales / Marketing",
             svgSrc: "assets/icons/menu_store.svg",
-            press: () {setState((){
-              title=8;
-            });},
+            press: () {
+              setState(() {
+                title = 8;
+              });
+            },
           ),
           DrawerListTile(
             title: "AI",
             svgSrc: "assets/icons/menu_store.svg",
-            press: () {setState((){
-              title=9;
-            });},
+            press: () {
+              setState(() {
+                title = 9;
+              });
+            },
           ),
           DrawerListTile(
             title: "Notification",
             svgSrc: "assets/icons/menu_notification.svg",
-            press: () {setState((){
-              title=10;
-            });},
+            press: () {
+              setState(() {
+                title = 10;
+              });
+            },
           ),
           DrawerListTile(
             title: "Profile",
             svgSrc: "assets/icons/menu_profile.svg",
-            press: () {setState((){
-              title=11;
-            });},
+            press: () {
+              setState(() {
+                title = 11;
+              });
+            },
           ),
           DrawerListTile(
             title: "Settings",
             svgSrc: "assets/icons/menu_setting.svg",
-            press: () {setState((){
-              title=12;
-            });},
+            press: () {
+              setState(() {
+                title = 12;
+              });
+            },
           ),
         ],
       ),
     );
-}
+  }
 }
