@@ -6,6 +6,11 @@ import 'package:flutter_svg/svg.dart';
 import 'package:provider/provider.dart';
 
 import '../analytics/analytics_main.dart';
+import '../database/database_screen.dart';
+import '../notification/notification_screen.dart';
+import '../recommendations/recommendations_screen.dart';
+import '../reports/reports_screen.dart';
+import '../sales_market/sales_market_screen.dart';
 import 'components/side_menu.dart';
 
 class MainScreen extends StatefulWidget {
@@ -42,6 +47,36 @@ class _MainScreenState extends State<MainScreen> {
                 // It takes 5/6 part of the screen
                 flex: 5,
                 child: AnalyticsMainScreen(),
+              ),
+            if (title == 3)
+              Expanded(
+                // It takes 5/6 part of the screen
+                flex: 5,
+                child: DatabaseMainScreen(),
+              ),
+            if (title == 4)
+              Expanded(
+                // It takes 5/6 part of the screen
+                flex: 5,
+                child: ReportMainScreen(),
+              ),
+            if (title == 7)
+              Expanded(
+                // It takes 5/6 part of the screen
+                flex: 5,
+                child: RecommendationScreen(),
+              ),
+            if (title == 8)
+              Expanded(
+                // It takes 5/6 part of the screen
+                flex: 5,
+                child: SalesMarketScreen(),
+              ),
+            if (title == 10)
+              Expanded(
+                // It takes 5/6 part of the screen
+                flex: 5,
+                child: NotificationScreen(),
               ),
           ],
         ),
